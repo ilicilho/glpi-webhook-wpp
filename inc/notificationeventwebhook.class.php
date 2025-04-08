@@ -202,7 +202,7 @@ static public function extraRaise($params) {
 									case 4: // APIKEY
 									[
 										'Content-type: application/json',
-										'apikey: '".$webhook_infos['additionnaloption']['secret']
+										'apikey: '.$webhook_infos['additionnaloption']['secret']
 										];
 									break;
 								}
