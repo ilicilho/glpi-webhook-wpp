@@ -199,7 +199,11 @@ static public function extraRaise($params) {
 										];
 									break;
 
-									case 4: // JSON Web Token
+									case 4: // APIKEY
+									[
+										'Content-type: application/json',
+										'apikey: '".$webhook_infos['additionnaloption']['secret']
+										];
 									break;
 								}
 								
